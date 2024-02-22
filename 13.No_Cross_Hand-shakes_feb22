@@ -1,0 +1,29 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+class Main {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if(n%2==1)
+         System.out.println(0);
+        else
+        {
+         int ans=0;
+         switch(n)
+         {
+          case 2:ans=1;break;
+          case 4:ans=2;break;
+          case 6:ans=5;break;
+          case 8:ans=14;break;
+          case 10:ans=42;break;
+          case 12:ans=132;break;
+          case 14:ans=429;break;
+          case 16:ans=1430;break;
+          case 18:ans=4862;break;
+          case 20:ans=16796;break;
+         }
+         System.out.println(ans);
+        }
+    }
+}
